@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fee Details</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-image: url(images/hostelbc1.png);
+            background-repeat: no-repeat;
+            background-size:contain;
+            backdrop-filter: blur(3px);
+            padding: 10px;
+            /* text-shadow: 1px 1px 1px white, 0 0 0.2em white, 0 0 0.1em rgb(229, 226, 62); */
+        }
+       #feetable{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 25px;
+        font-weight: 900;
+        border-collapse: collapse;
+        text-shadow: 2px 2px 1px white, 0 0 0.2em rgb(195, 223, 226), 0 0 0.1em rgb(229, 226, 62);        
+        background: rgba(75, 73, 73, 0.243);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(3px);
+        border-radius: 25px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+        /* border: 1px solid rgba(255, 255, 255, 0.2); */
+
+        border-collapse: collapse;
+        th,td{ 
+            padding: 15px 25px 15px;
+            border-color: gray;
+            border:2px solid rgba(128, 128, 128, 0.425);
+            border-radius: 25px;
+        }
+        th{
+            font-weight: 900;
+            font-size: 28px;
+            color: rgb(0, 0, 0);
+            text-decoration:solid underline rgb(91, 18, 174) 2px; 
+            /* text-shadow: 1px 1px 3px yellow, 0 0 1em rgb(91, 18, 174), 0 0 0.3em rgb(91, 18, 174); */
+        }
+       }
+       .fdd{
+        text-align: center;
+        font-size: 25px;
+        padding: 10px 90px;
+       }
+       #fd{
+        font-size: 20px;
+        padding: 10px 90px;
+       }
+       .roombtn{
+            font-family: Garamond;
+            font-size:25px;
+            font-weight: 700;
+            color:black;
+            padding:10px 17px;
+            background-color: rgba(255, 247, 89, 0.718);
+            border-radius: 50px;
+            border:0.8px solid gray;
+            cursor: pointer;
+            transition: background-color 0.3s, font-size 0.3s, color 0.3s;
+        }
+        .roombtn:hover {
+            background-color: rgb(39, 138, 169); /* #0056b3 Button color on hover */
+            font-size: 27px; 
+            padding: 11px 19px;
+            color:white;
+        }
+    </style>
+    
+</head>
+<body>
+    <img src="images/MyHostelPic4.png" height="80px" align="left" style="border-radius: 7px;">
+        <a href="index.html" style="color: white;padding-left: 1100px;text-decoration: none;" ><img src="images/homeicon.png" alt="" width="50px" style="padding-top:2px;"> HOME </a> <br><br>
+        <div class="fdd"> <h1 style="text-shadow: 2px 3px 2px yellow, 0 0 1em rgb(91, 18, 174), 0 0 0.2em rgb(91, 18, 174);">Fee Details</h1>
+        At HEARTHSTONE, we aim to provide transparent and accessible pricing for our residents. Our fee structure is designed to cover the cost of accommodation, amenities, and services, ensuring a comfortable and convenient living experience for all our guests.
+    </div> <br><br>
+    <table id="feetable" align="center" >
+        <tr>
+            <th>Room Type</th>
+            <th>AC</th>
+            <th>Non AC</th>
+        </tr>
+        <tr>
+            <td>One Bedded Room</td>
+            <td>Rs. 16,000</td>
+            <td>Rs. 14,500</td>
+        </tr>
+        <tr>
+            <td>Two Bedded Room</td>
+            <td>Rs. 13,800</td>
+            <td>Rs. 11,000</td>
+        </tr>
+        <tr>
+            <td>Four Bedded Room</td>
+            <td>Rs. 9,000</td>
+            <td>Rs. 6,500</td>
+        </tr>
+    </table>
+    <center> <br><br>
+    <button onclick="redirectToBookRoom()" class="roombtn">Book Room</button> 
+</center>
+<p class="fdd">*Note:The above fees are per month</p>
+<p id="fd">At HEARTHSTONE , we believe in providing you with a comprehensive living experience without any hidden costs. Our total fee encompasses all essential services, ensuring a hassle-free stay for our residents. Below is a breakdown of our total fees:
+<dl id="fd">
+   <dt>1. Accommodation Fee:</dt>
+    <dd>This fee covers your room or bed space for the entire month. Whether you prefer a private room or a shared dormitory, we offer comfortable and secure accommodations to suit your needs.</dd>  
+    <dt>2. Amenities Fee:</dt> 
+    <dd>Enjoy access to a range of amenities included in your total fee. From high-speed Wi-Fi to laundry facilities and common areas, we maintain our amenities to the highest standards for your convenience.</dd> 
+    <dt>3.Security Deposit:</dt> 
+    <dd> As part of your total fee, a security deposit is collected upon check-in to protect against any damages or incidental charges during your stay. This deposit is fully refundable upon checkout, provided there are no outstanding fees or damages.</dd>
+    <dt>4.Maintenance Fee:</dt>
+    <dd>
+    Our maintenance fee ensures the upkeep of the premises, including regular cleaning and maintenance of facilities, to provide you with a comfortable living environment.</dd>
+    <dt>5. AC (Air Conditioning) Fee: </dt> 
+    
+    <dd> Stay cool and comfortable year-round with our AC facilities. The AC fee is included in your total monthly charge for uninterrupted climate control. </dd>
+   <dt>6. Mess Fee: </dt>
+    <dd>
+    Enjoy nutritious and delicious meals with our mess facilities. The mess fee covers your dining requirements, providing you with a convenient and satisfying culinary experience.</dd>
+    <dt>7. Other Services:</dt>
+    
+    <dd> Additionally, your total fee covers various other services aimed at enhancing your stay, such as 24/7 security surveillance, access to recreational areas, and more.</dd> <br>
+    At HEARTHSTONE, we prioritize transparency and aim to provide you with exceptional value for your money. With our all-inclusive total fee, you can focus on making the most of your time with us without worrying about additional expenses.</p>
+</dl>
+    <script>
+        function redirectToBookRoom() {
+            // Redirect to another HTML page
+            window.location.href = "form.html";
+        }
+    </script>
+</body>
+</html>

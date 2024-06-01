@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 20px;
+        font-style: 'garamond';
+        text-align: justify;
+        }
+        .container {
+  background-color:rgb(88, 87, 87);
+  padding:20px 60px;
+  border: 1px solid whitesmoke;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+  width: 500px;
+
+
+  background: rgba(178, 112, 225, 0.839);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 0px 0px 25px 25px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+        label {
+        display: block;
+        padding: 20px 3px 8px 50px;
+        text-align: justify;
+        }
+
+        input[type="text"],textarea,input[type="date"],input[type="time"],input[type="tel"]{
+        padding:10px 40px;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+        border-radius: 6px;
+        margin:10px;
+        font-size: 15px;
+        font-style: 'garamond';
+        }
+        button[type="submit"] {
+        background-color:gray;
+        color: #fff;
+        font-size: 20px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin: 0 10px;
+        }
+        button[type="submit"]:hover{
+            background-color: rgb(70, 200, 251);
+            font-size: 23px;
+            padding: 10px 20px;
+        }
+        #out{
+            background-color: antiquewhite;
+            padding: 20px 60px 0px;
+            font-size: 24px;
+            font-family: garamond;
+            border-radius: 20px;
+        }
+  </style>
+
+</head>
+<body>
+    <div id="out">
+    <center><h1>Hostel Outing</h1></center>
+    <p>As part of our commitment to ensuring the safety and security of all our Hostellers, we kindly request that you inform our staff if you plan to leave the hostel premises for an extended period of time. This allows us to maintain accurate records of guest movements and ensures that we can reach you in case of any emergencies. Please fill out the following form if you intend to leave the hostel premises for an extended period of time.</p>
+<br>
+<center><div style="width: 620px;background-color:rgba(178, 112, 225, 0.839);border-radius:25px 25px 0px 0px;"><br><img src="images/MyHostelPic4.png" width="270px" style="border-radius:25px;padding: 15px;"></div></center></div><center>
+     <div class="container" >
+        <h1>Outing Permission</h1>
+        <div id="form-container">
+          <form action="" method="post">
+            <label for="name">Name:
+            <input type="text" name="name" id="name" required></label>
+            <label for="roomno">Room No:
+            <input type="text" name="roomno" id="roomno" required></label>
+            <label for="dd">Date of Departure:
+            <input type="date" name="dd" id="dd" required></label>
+            <label for="td">Time Of Departure:
+            <input type="time" name="td" id="td" required></label>
+            <label for="dr">Expected Date of Return:
+            <input type="date" name="dr" id="dr" required></label>
+            <label for="tr">Expected Time Of Return:
+            <input type="time" name="tr" id="tr" required></label>
+            <label for="tr">Purpose of Outing:</label>
+            <textarea name="po" id="po" required rows="4" cols="35"></textarea>
+            <label for="phone">Phone Number:
+            <input type="tel" id="phone" name="phone" required> <br><br></label>
+            <button type="submit" onclick="cango();">  Submit</button>
+          </form> <br> <br>
+        </div>
+      </div></center> 
+      <script>
+        function cango(){
+            alert("Outing Form submitted successfully \n You will recieve a confirmation soon");
+          window.open('index.html','_blank');  
+        }
+      </script>
+</body>
+</html>

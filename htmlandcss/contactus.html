@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        #icu{
+            background-image: url('images/contactus5.jpg');
+            background-size:cover;
+            background-repeat:no-repeat;
+            text-align: center;
+        }
+        .cu{
+            border-spacing:60px;
+            img{
+            height: 70px;
+            align-items: center;
+            }
+        }
+        .cug{
+            font-size: 23px;
+            font-family: Garamond;
+            text-align: center;
+            padding: 5px 150px;
+        }
+        #cutd{
+                text-align: center;
+                width: 300px;
+                padding: 90px 60px 120px;
+                font-size: 20px;
+                font-weight: 600;
+                font-family: Garamond;
+            
+        }
+        #cutd:hover{
+            font-size:22px;
+            background-color: rgb(212, 212, 212);
+            border-radius: 50px;
+            color: rgb(9, 213, 254);
+            p{
+                font-size: 24px;
+            }
+            img{
+                height: 100px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="icu">
+        <img src="images/MyHostelPic4.png" height="60px" align="left" style="border-radius: 12px;">
+        <a href="index.html" style="color:black;padding-left: 1100px;text-decoration: none;" ><img src="images/homeicon.png" alt="" width="50px" style="padding-top:2px;"> HOME </a> <br><br>
+    <h1 style="padding:10px 2px 200px 2px;font-size:45px;">Contact Us</h1>
+</div>
+    <div class="cug">We value your feedback and inquiries. Feel free to reach out to us through any of the following channels: </div> 
+    
+    <table class="cu">
+        <tr>
+            <td id="cutd">
+            <img src="images/phone.png">
+            <p style="font-size: 22px;">PHONE</p>  
+            Main Line: [+123-456-7890] <br>
+            Customer Support: [+123-456-7891] <br><br>
+            </td>
+            <td id="cutd" >
+            <img src="images/address.webp">
+            <p style="font-size: 22px;">ADDRESS</p>
+            HEARTHSTONE HOSTELS <br>
+            11-9/C, Blueway Lane, <br>
+            San Fransisco, <br>
+            United States of America(USA)
+            </td>
+            <td id="cutd">
+                <img src="images/email.png">
+                <p style="font-size: 22px;">EMAIL</p>
+                Book Room: <br> [hearthstone@gmail.com] <br>
+                Customer Support: [hearthstonesupport@gmail.com]
+            </td>
+        </tr>
+    </table></center>
+    <form action=""></form>
+    <p class="cug">
+        For general inquiries, feedback, or support, please feel free to contact us using the information provided above. We aim to respond to all inquiries within 24-48 hours during regular business hours.
+    </p> <br>
+    <center>
+    <h3>To send your message directly from website fill the below form</h3>
+    <table style="background-color: antiquewhite;border-radius: 30px;"">
+        <td>
+            <img src="images/contactus.webp" width="800px">
+        </td>
+        <td>
+            <form class="cug" id="con">
+               <center>
+                <h4>Message Us</h4> 
+               Name: <input type="text" name="name" id="name"> <br><br>
+               Email:<input type="email" name="email" id="email"> <br><br>
+               Message: <br>
+               <textarea name="msg" id="msg" cols="50" rows="10" style="border-radius: 10px;"></textarea> <br>
+               <br><button type="submit" onclick="filled();">Submit</button>
+               <button type="reset">Reset</button></center>
+            </form>
+        </td>
+    </table></center> <br>
+    <script>
+        function filled(){
+            alert("Message Submitted Successfully \n We will review it soon");
+          window.open('index.html','_blank');  
+        }
+      </script>
+    
+</body>
+</html>

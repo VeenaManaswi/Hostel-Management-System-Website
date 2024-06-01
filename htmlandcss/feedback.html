@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .emoji{
+            width: 50px;
+            border-radius: 32px;
+        }
+
+        #rating {
+        text-align: center;
+        background-color:rgb(88, 87, 87);
+        color: black;
+        padding: 50px 60px;
+        border: 1px solid whitesmoke;
+        border-radius: 18px;
+        box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+        width: 450px;
+        font-size: 22px;
+        font-family: Garamond;
+        font-weight: 600;
+color: white;
+        background: rgb(43, 121, 125);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+    
+
+        button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin: 0 10px;
+        }
+
+
+        label {
+        display: block;
+        padding: 20px 3px 8px;
+        }
+
+        input[type="text"],textarea{
+        width: 90%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+        border-radius: 6px;
+        margin-bottom: 15px;
+        font-size: 17px;
+        font-style: 'garamond';
+        }
+        input[type="radio"]{
+            width: 20px;
+            margin:2px 4px 2px 13px;
+           accent-color: #db34d5;
+        }
+
+        button[type="submit"] {
+        background-color: #db34d5;
+        color: #fff;
+        }
+        .radiogrp {
+            display: flex;
+            flex-direction: row;
+        }
+        #fdt{
+            td{
+                padding: 10px 30px ;
+            }
+           
+        }
+    </style>
+</head>
+<body>
+    <table id="fbt">
+        <td style="padding-right: 100px;">
+            <img src="images/feedback.avif" width="700px">
+        </td>
+<td>
+    <center>
+    <h2>Give Feedback</h2>
+      <form action="feedback.php" method="post" id="rating">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+        <label for="feedback">Feedback:</label>
+        <textarea name="feedback" id="feedback" rows="6" ></textarea>
+        
+        <label for="rating" style="padding:20px 2px 3px;">Rating:</label>
+        <div class="radiogrp">
+        <input type="radio" name="rating" id="5">
+        <label for="5"><img src="images/emoji5.png" class="emoji" id="5"></label>  
+        <input type="radio" name="rating" id="4">
+        <label for="4"><img src="images/emoji4.png" class="emoji" id="5"></label>
+        <input type="radio" name="rating" id="3"></label>
+        <label for="3"><img src="images/emoji3.png" class="emoji" id="5"></label>
+        <input type="radio" name="rating" id="2">
+        <label for="2"><img src="images/emoji2.png" class="emoji" id="5"></label>
+        <input type="radio" name="rating" id="1">
+        <label for="1"><img src="images/emoji1.png" class="emoji" id="5"></label></div>
+        <br><button type="submit">
+            <!-- <a href="index.html" style="  text-decoration: none;color:white;">Login</a>  -->
+        Submit</button>
+      </form> <br> <br>
+    </center>
+</td>
+</body>
+</html>

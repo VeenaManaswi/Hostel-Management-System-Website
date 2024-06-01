@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Hostel</title>
+    <style>
+        body{
+            font-family:Garamond;
+            font-size: 25px;
+            font-weight: 800;
+            color:white;
+        }
+        #top{
+          background-image: url('images/hostel1.png');
+          background-repeat: no-repeat;
+          /* background-attachment: scroll;   */
+          background-size: cover;
+          font-size: 40px;
+          font-weight: 1000;
+        }
+        #form{
+            background-color:gray;
+            width: 460px;
+            text-align:justify;
+            padding:30px 70px;
+            font-size: 23px;
+            font-weight: 600;
+        }
+        body {
+  /* font-family: Arial, sans-serif; */
+  padding: 20px;
+}   
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],input[type="email"],input[type="tel"],select,textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+input[type="radio"],input[type="checkbox"]{
+  width:17px;
+  height: 17px;
+  margin: 8px;
+}
+button {
+  background-color: #2b2d2b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-family:Garamond;
+  font-size: 25px;
+}
+
+button:hover {
+  background-color: #3da0ca;
+}
+        
+    </style>
+</head>
+<body>
+    <div id="top" width="1200px" height="700px" >   
+        <center>
+            <br><br><br><br>
+            <div style="background-color:gray;width: 600px;height:300px;"> <br> Book your Hostel now
+                <br>
+                <div style="font-size: 23px;font-weight: 500;padding:40px 30px 30px;text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Secure your stay at our vibrant hostel by filling out essential details including your preferred dates, room type, and any special requests. Complete the form effortlessly to unlock an unforgettable experience at our welcoming accommodation</div>
+            </div>
+        </center>   
+    </div>
+    <center><div id="form">
+        <form id="bookingForm" method="post" action="formbooking.php" >
+            <label for="full_name">Name:</label>
+            <input type="text" id="full_name" name="full_name" placeholder="Enter your name" required><br><br>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required><br><br>
+        
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your Phone number" required><br><br>
+        
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" placeholder="Enter your address" required><br><br>
+        
+            <label>What do you do:</label>
+            &nbsp; <input type="radio" id="studying" name="occupation" value="studying">Student &nbsp; &nbsp; &nbsp; 
+            <!-- <label for="studying">Student</label><br> -->
+            <input type="radio" id="job" name="occupation" value="job">Job <br> <br>
+            <!-- <label for="job">Job</label><br><br> -->
+        
+            <div id="classDegree" style="display: none;">
+              <label for="study_details">What are you studying at present:</label>
+              <input type="text" id="study_details" name="study_details" placeholder="Enter your Degree"><br><br>
+            </div>
+        
+            <div id="jobDetails" style="display: none;">
+              <label for="job_details">Job Details:</label>
+              <input type="text" id="job_details" name="job_details" placeholder="Enter your Job title"><br><br>
+            </div>
+        
+            <label for="join_date">Date of joining Hostel:</label>
+            <input type="date" id="join_date" name="join_date" required><br><br>
+        
+            <label for="room_type">Room Type:</label>
+            <select id="room_type" name="room_type" required>
+              <option value="">Select Room Type</option>
+              <option value="single_bed">Single Bed</option>
+              <option value="double_bed">Double Bed</option>
+              <option value="four_bed">Four Bed</option>
+            </select><br><br>
+        
+            <label for="ac_option">AC or Non-AC:</label>
+            <select id="ac_option" name="ac_option" required>
+              <option value="">Select AC Option</option>
+              <option value="ac">AC</option>
+              <option value="non_ac">Non-AC</option>
+            </select><br><br>
+        
+            <label for="special_requests">Special Requests:</label><br>
+            <textarea id="special_requests" name="special_requests" rows="4" cols="50"></textarea><br><br>
+        
+            <label for="terms_conditions">
+              <input type="checkbox" id="terms_conditions" name="terms_conditions" required>
+              I accept the terms and conditions
+            </label><br><br>
+            <center>
+            <button name="submit" type="submit" onclick="confirm();">Submit</button>
+            <button type="reset">Reset</button></center>
+          </form>
+        
+          <script src="formscript.js"></script>
+      </div>
+  </center>
+</body>
+</html>

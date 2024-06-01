@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #heading{
+            font-family:'Garamond';
+            font-size: 45px;
+            font-weight: 700;
+            text-align: center;
+            text-shadow:3px 3px antiquewhite;
+        }
+        #roomleft{
+            margin-top:145px;
+            width: 350px; 
+            margin-left: 60px;
+            border-radius: 9px;
+        }
+        #roomright{
+            margin-top:145px;
+            width: 350px; 
+            margin-right: 60px;
+            border-radius: 9px;
+        }
+        .room:hover{
+        transform:scale(1.1);
+        }
+        .box{
+            font-family: Garamond;
+            font-size:25px;
+            background-color:antiquewhite;
+            background-size: 500px 1200px;
+        }
+        #boxleft{
+            padding-left:50px;
+            padding-right: 160px;
+            padding-bottom: 60px;
+            padding-top:60px;
+            text-align: justify;
+            margin-left:60px;
+            margin-right:300px;
+        }
+        #boxright{
+            padding-left:160px;
+            padding-right: 50px;
+            padding-bottom: 60px;
+            padding-top:60px;
+            text-align: justify;
+            margin-left:300px;
+            margin-right:60px;
+        }
+        #type{
+            font-family: Garamond;
+            font-size:40px;
+            font-weight: 700;
+        }
+        .roombtn{
+            font-family: Garamond;
+            font-size:25px;
+            font-weight: 700;
+            color:black;
+            padding:10px 17px;
+            background-color: rgb(40, 140, 143,0.3);
+            border-radius: 50px;
+            border:0.8px solid gray;
+            cursor: pointer;
+            transition: background-color 0.3s, font-size 0.3s, color 0.3s;
+        }
+        .roombtn:hover {
+            background-color: rgb(45, 103, 105); /* #0056b3 Button color on hover */
+            font-size: 27px; 
+            color:white;
+        }
+        #description{
+            font-family: Garamond;
+            font-size:27px;
+            padding: 50px 60px 30px 60px;
+        }
+    </style>
+</head>
+<body>
+    <img src="images/MyHostelPic4.png" height="80px" align="left" style="border-radius: 7px;">
+        <a href="index.html" style="color: black;padding-left: 1100px;text-decoration: none;" ><img src="images/homeicon.png" alt="" width="50px" style="padding-top:2px;"> HOME </a> <br><br>
+    <p id="heading">Room Options: Choose Your Ideal Space</p>  
+    <div id="description"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HEARSTONE</b> hostel offers versatile accommodation choices to cater to diverse needs. Whether you prefer the privacy of a single bedded room, the camaraderie of a two bedded room, or the communal living of a four bedded room, our hostel provides options suitable for both students and professionals alike.</div>
+<div>
+    <img src="/images/1bed.png" id="roomleft" class="room" align="left"> 
+    <br><br><br>
+    <div id="boxright" class="box" align="rignt" height="500px" width="1000px">
+         <div id="type">Single Bedded Room:</div> 
+        <ul>
+            <li>Ideal for students or working individuals seeking personal space and privacy.</li>
+            <li>Furnished with a single bed, a study desk with a chair, a wardrobe, and possibly additional storage options.</li>
+            <li>Basic amenities such as a reading lamp, power outlets, and possibly a small desk or chair are provided.</li>
+            <li>This room offers a quiet environment for focused study or relaxation after a long day at work.</li>
+            <li>Attached washrooms offer exclusive convenience and privacy, ensuring comfort and ease for residents.</li>
+            <li>Both AC and Non Ac Rooms available</li>
+        </ul>
+        <center>
+        <button onclick="redirectToBookRoom()" class="roombtn">Book Room</button> &nbsp;&nbsp;&nbsp;
+        <button onclick="redirectToAnotherPage()" class="roombtn">Fee Details</button></center>
+    </div>  
+</div>
+<div>
+    <br><br>
+    <img src="/images/2bed.png" id="roomright" class="room" align="right"> 
+    <br><br><br>
+    <div id="boxleft" class="box" align="left" height="500px" width="1000px">
+         <div id="type">Double Bedded Room:</div> 
+        <ul>
+            <li>Suited for pairs of students or working individuals looking for shared accommodations.</li>
+            <li>Each occupant has their own bed, study area with a desk and chair, and storage space for personal belongings.</li>
+            <li>Shared amenities like study lamps, power outlets, and possibly a communal notice board or whiteboard for communication.</li>
+            <li>This room fosters companionship and collaboration between roommates, suitable for both study groups and professional networking.</li>
+            <li>Includes attached washroom facilities for added convenience and privacy in each hostel room.</li>
+            <li>Both AC and Non Ac Rooms available</li>
+        </ul>
+        <center>
+            <button onclick="redirectToBookRoom()" class="roombtn">Book Room</button> &nbsp;&nbsp;&nbsp;
+            <button onclick="redirectToAnotherPage()" class="roombtn">Fee Details</button></center>
+    </div>  
+</div>
+<div>
+    <br><br>
+    <img src="/images/4bed.png" id="roomleft" class="room" align="left"> 
+    <br><br><br>
+    <div id="boxright" class="box" align="rignt" height="500px" width="1000px">
+         <div id="type">Four Bedded Room:</div> 
+        <ul>
+            <li>Ideal for larger groups of students or individuals with varied schedules such as shift workers</li>
+            <li>Features bunk beds or multiple twin beds, study desks with chairs for each occupant, and ample storage options.</li>
+            <li>Shared amenities include study lamps, power outlets, and communal spaces for group meetings or discussions.</li>
+            <li>This room encourages a sense of community among residents, providing opportunities for both academic and professional networking and support.</li>
+            <li>Each hostel room comes with an attached washroom for added convenience and privacy.</li>
+            <li>Both AC and Non Ac Rooms available</li>
+        </ul>
+        <center>
+            <button onclick="redirectToBookRoom()" class="roombtn">Book Room</button> &nbsp;&nbsp;&nbsp;
+            <button onclick="redirectToAnotherPage()" class="roombtn">Fee Details</button></center>
+    </div>  
+</div>
+<script>
+    function redirectToBookRoom() {
+        // Redirect to another HTML page
+        window.location.href = "form.html";
+    }
+    function redirectToAnotherPage() {
+        window.location.href = "feedetails.html";
+    }
+</script>
+</body>
+</html>

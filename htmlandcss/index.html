@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #home {
+          background-image: url('images/beach.avif');
+          background-repeat: no-repeat;
+          background-attachment: scroll;  
+          background-size: cover;
+        }
+        #mainpanel{
+           font-size: 23px;
+           font-family:'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+           height: 110px;
+           width:1520px;
+           text-align:center;
+           padding:1px 2px 1px 40px;
+           margin:1px;
+           border-spacing:5px;
+           border-radius: 100px;
+           color: black;
+           position:fixed;
+           background-color:rgba(0,0,0,0.0) ;
+           transition: background-color 0.3s;
+           /* background-color: rgba(0,0,0,0.0); */
+           td{
+            width: 180px;
+           }
+           .mp{
+            text-decoration: none;
+            color:black;
+        }
+        .mp:hover{
+            color: rgb(5, 154, 253);
+        }
+        }
+        #welcome{
+            background-color:rgb(250, 235, 215,0.05);
+            font-size: 25px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 500;
+            height:410px;
+            width:1520px;
+            align-items: left;
+            text-align:center;
+            border-radius: 7px;
+            border-spacing:25px;
+            td{
+                border:3px solid rgba(48, 45, 45,0.0);
+                border-radius:10px;
+                vertical-align: middle;
+                width: 830px;
+                padding: 10px 8px 1px;
+            }
+        }
+        .btn{
+            font-size:22px;
+            background-color:rgb(171, 142, 36);
+            height: 45px;
+            width: 180px;
+            color:white;
+            border: 1px solid whitesmoke;
+            border-radius:100px;
+            margin-top: 18px;
+            margin-bottom:30px;
+        }
+        .btn:hover{
+            background-color:rgb(36, 162, 171);
+            padding: 10px;
+            width: 190px;
+            height: 50px;
+        }
+        /* img:hover{
+                transform:scale(1.05);
+            } */
+        #about{
+            font-family: Garamond;
+            font-size:25px;
+            background-color:antiquewhite;
+            border-radius: 7px;
+            background-size: 600px 1200px;
+            /* padding-left:50px;
+            padding-right:50px; */
+            margin-left:60px;
+            margin-right:330px;
+            vertical-align: middle;
+        }
+        </style>
+        <script>
+            let lastScrollTop = 0;
+            window.addEventListener('scroll', function() {
+            var mainPanel = document.getElementById('mainpanel');
+            if (window.scrollY > 0) {
+                mainPanel.style.backgroundColor = 'antiquewhite';
+                mainPanel.style.border='6px solid cadetblue';
+                // mainPanel.style.color = 'white';
+            } else {
+                mainPanel.style.backgroundColor = 'rgba(0,0,0,0.0)';
+                mainPanel.style.border='none';
+                // mainPanel.style.color = 'black';
+            }
+            });
+        </script>
+        <style>
+            .pic{
+                width:280px;
+                height:280px;
+                border-radius:30px;
+                align-items: center;
+                
+            }
+            #fac{
+            tr,td{
+                padding: 35px;
+                text-align:center;
+                width:500px;
+                border-radius:27px ;
+                background: linear-gradient(to bottom, white 35%, cadetblue 70%);
+                background-position: bottom;
+                border:7px solid white;
+                margin:20px;
+                font-family:Garamond;
+                font-size: 25px;
+                font-weight: 800;
+                color:white;
+            }
+            }
+
+            .des{
+                font-size:22px;
+                font-weight:500;
+                margin-top:15px;
+                font-family:Garamond;
+                
+                color:white;
+            }
+            .pic:hover{
+            transform:scale(1.07);
+            }
+
+
+            #icu{
+            background-image: url('images/contactus5.jpg');
+            background-size:cover;
+            background-repeat:no-repeat;
+            text-align: center;
+        }
+            .cu{
+            border-spacing:60px;
+            img{
+            height: 70px;
+            align-items: center;
+            }
+        }
+        .cug{
+            font-size: 23px;
+            font-family: Garamond;
+            text-align: center;
+            padding: 5px 150px;
+        }
+        #cutd{
+                text-align: center;
+                width: 300px;
+                padding: 90px 60px 120px;
+                font-size: 20px;
+                font-weight: 600;
+                font-family: Garamond;
+            
+        }
+        #cutd:hover{
+            font-size:22px;
+            background-color: rgb(212, 212, 212);
+            border-radius: 50px;
+            color: rgb(9, 197, 254);
+            p{
+                font-size: 24px;
+            }
+            img{
+                height: 100px;
+            }
+        }
+        .sm{
+            width: 60px;
+            padding: 15px;
+        }
+        </style>
+</head>
+<body>
+    <div id="home">
+    <table id="mainpanel">
+        <tr>
+            <td style="width:550px;"><img src="images/MyHostelPic4.png" alt="hostel" style="height:90px;border-radius:20px;" align="left"></td>
+            <td><a href="index.html" class="mp">Home<sub>&#x25BE;</sub> </a></td>
+            <td><a href="#aboutus" class="mp">About Us<sub>&#x25BE;</sub></a></td>
+            <td><a href="#facilities" class="mp">Amenities<sub>&#x25BE;</sub></a></td>
+            <td><a href="roomtype.html" class="mp">Rooms<sub>&#x25BE;</sub></a></td>
+            <td><a href="feedetails.html" class="mp">Fees<sub>&#x25BE;</sub></a></td>
+            <td><a href="outing.html" class="mp">Outing</a><sub>&#x25BE;</sub></td>
+            <td><a href="contactus.html" class="mp">ContactUs</a><sub>&#x25BE;</sub></td>
+            <td><img src="images/user.png" alt="USER" style="width:80px;"><br>
+                <a href="signin.html" class="mp" style="font-size: 15px;">signout</a></td>
+
+        </tr>
+    </table>
+    <br><br><br><br><br>
+    <div> <br><br></div>
+    <table id="welcome">
+            <tr>
+                <td style="font-family: Garamond;font-size:40px;width: 2300px;">
+                    <b><center>  Welcome to <br style="margin-bottom: 10px;">
+                     <span style="color: rgb(255, 16, 167);font-family:'arial';font-weight: 700;font-size: 50px;">HEARTHSTONE HOSTELS<br></span>
+                        <span style="color: rgb(252, 250, 163);font-family:'arial';font-size: 22px;">  YOUR HOME AWAY FROM HOME</span> <br>
+                     <br><img src="images/anihostel2rbg2.png" alt="no" height="250px" style="align-items: center;">
+                    </center></b>
+                </td>
+                <td style="border: 2px solid whitesmoke;background-color: rgba(250, 235, 215,0.5);"> 
+                    <img src="images/anihostel7rbg.png" align="center" height="350px">
+<br> Book your hostel room now <br> 
+                    <button class="btn"><a href="form.html" style="color: rgb(255, 255, 255);text-decoration: none;">Book Hostel</a></button><br>
+                </td>
+            </tr>
+    </table> 
+    <br><br><br><br><br><br><br><br>
+    </div ><b> 
+    <br><br><br>
+    <div id="aboutus" >
+        <br><br><br>
+        <img src="images/hostelPic-2.jpg" align="right" width="650px" style="margin:75px 50px 0px 0px;"> 
+        <!-- style="position: relative;top: 100px;right:10px;"-->
+        <div id="about" align="left" font-size="30px">
+        <div style="font-family: Garamond;font-size:40px;padding-left:45px;"><br><br> About Us <br><br>
+        </div></b>
+        <div style="width:650px;padding-left:45px;">
+            The HEARTHSTONE is your premier student accommodation in San Fransisco, offering a safe, comfortable, and enriching environment. Strategically located near universities and amenities, we provide modern facilities including study areas, high-speed internet, and security systems. Our commitment to safety ensures peace of mind for residents and families. With a focus on community, we organize social events and support cultural exchanges, fostering lifelong friendships. Our dedicated staff are always available to assist with any needs or concerns. Whether you're a local or international student, The Hearhtstone welcomes you to join our vibrant community. Experience the perfect blend of convenience, comfort, and camaraderie at the Hearthstone.<br><br><br><br><br><br></div>
+        </div> 
+    </div>
+<br><br><br><br><br><br>
+<div id='facilities' style="background-color:rgb(96, 94, 94);color:white;font-weight: 600;font-family: 'Gill Sans';font-family:'Garamond';font-size: 25px;">
+    <br>
+<center><h1>Facilities</h1>
+<div style="font-weight:500;font-size:25px;padding:10px 70px;text-align: left;">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At <b>HEARTHSTONE</b> we offer a lot of facilites and services to make you feel comfortable. From comfortable accommodation options including single, double, or dormitory-style rooms to spacious common areas ideal for socializing and relaxation, we strive to create a welcoming atmosphere. 
+        Our study rooms are equipped with everything needed for focused academic pursuits, complemented by high-speed internet access ensuring seamless research and communication. With 24/7 security measures in place, including CCTV surveillance and secure entry systems, we prioritize the safety and well-being of our residents. </div>
+</center> <br></div>
+<table id="fac" style="padding: 20px;border-spacing: 22px;">
+    <tr>
+        <td>
+            <img src="images/room.png" alt="room" class="pic">
+            <br>Well furnished rooms <br>
+            <div class="des">Comfortable and well-furnished rooms with options for single, double, or dormitory-style occupancy.</div>
+        </td>
+        <td>
+            <img src="images/ac.jpg" alt="room" class="pic">
+            <br> Air Conditioning <br>
+            <div class="des">Comfortable hostel rooms equipped with efficient air conditioning for a nice relaxing stay.</div>
+        </td>
+        <td>
+            <img src="images/wifi3.webp" alt="room" class="pic">
+            <br>Free Wi-Fi <br>
+            <div class="des">High-speed Wi-Fi connectivity throughout the hostel premises to support online learning, and communication.</div>
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src="images/cleaning.jpg" alt="room" class="pic">
+            <br>Room Maintainence <br>
+            <div class="des">Regular cleaning and maintenance of common areas, bathrooms, and shared facilities to maintain cleanliness.</div>
+
+        </td>
+        <td>
+            <img src="images/studyarea.jpeg" alt="room" class="pic">
+            <br>Study Area <br>
+            <div class="des">Study rooms provide quiet and neat conducive spaces for focused academic pursuits.</div>
+        </td>
+        <td>
+            <img src="images/gym.jpeg" alt="gym" class="pic">
+            <br>Gym <br>
+            <div class="des">The gym is fully equipped with modern facilities to support residents' fitness goals and well-being.</div>
+        </td>
+    </tr>
+    <tr>
+       <td>
+            <img src="images/doctor.jpg" alt="doctor" class="pic">
+            <br>Medical Safety <br>
+            <div class="des">Offers accessible medical facilities ensuring residents health and well-being are prioritized.</div>
+        </td>
+       <td>
+            <img src="images/mess.jpeg" alt="mess" class="pic">
+            <br>Cafeteria <br>
+            <div class="des">Our cafeteria offers a diverse menu of delicious and affordable meals to satisfy every palate.</div>
+        </td>
+        <td>
+            <img src="images/watchman.jpg" alt="watchman" class="pic">
+            <br>Security Measures <br>
+            <div class="des">24/7 security surveillance, secure entry systems, and staff presence to ensure the safety and well-being of residents.</div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src="images/recreation.jpeg" alt="recreation" class="pic">
+            <br>Recreation<br>
+            <div class="des">Indoor and outdoor recreational facilities such as sports courts,TV rooms, and game rooms.</div>
+        </td>
+        <td>
+            <img src="images/laundry.jpg" alt="watchman" class="pic">
+            <br>Laundry Facilities<br>
+            <div class="des">On-site laundry rooms or facilities equipped with washing machines and dryers for residents' convenience.</div>
+        </td>
+        <td>
+            <img src="images/water.jpg" alt="watchman" class="pic">
+            <br>24/7 Supply<br>
+            <div class="des">Uninterrupted access to water and electricity round the clock, ensuring convenience for residents at all times.</div>
+        </td>
+        
+    </tr>
+</table>
+
+
+
+<div id="icu">
+<h1 style="padding:40px 2px 150px 2px;font-size:45px;">Contact Us</h1>
+</div>
+<div class="cug">We value your feedback and inquiries. Feel free to reach out to us through any of the following channels: </div> 
+    
+    <table class="cu">
+        <tr>
+            <td id="cutd">
+            <img src="images/phone.png">
+            <p style="font-size: 22px;">PHONE</p>  
+            Main Line: [+123-456-7890] <br>
+            Customer Support: [+123-456-7891] <br><br>
+            </td>
+            <td id="cutd" >
+            <img src="images/address.webp">
+            <p style="font-size: 22px;">ADDRESS</p>
+            HEARTHSTONE HOSTELS <br>
+            11-9/C, Blueway Lane, <br>
+            San Fransisco, <br>
+            United States of America(USA)
+            </td>
+            <td id="cutd">
+                <img src="images/email.png">
+                <p style="font-size: 22px;">EMAIL</p>
+                Book Room: <br> [hearthstone@gmail.com] <br>
+                Customer Support: [hearthstonesupport@gmail.com]
+            </td>
+        </tr>
+    </table></center>
+    <p class="cug">
+        For general inquiries, feedback, or support, please feel free to contact us using the information provided above. We aim to respond to all inquiries within 24-48 hours during regular business hours.
+    </p>
+    
+    <center><img src="images/map2.png"></center> <br><br>
+
+    <p class="cug">
+        At Hearthstone, we value your feedback as it helps us improve our services and better meet the needs of our guests.
+        <br>
+        To Provide Feedback,click here:
+        <a href="feedback.html">Feedback</a>
+    </p>
+
+    <div style="font-size: 22px;font-family: 'Garamond';background-color:rgb(97, 95, 95);color:white;border-radius: 15px;">
+        <table align="center">
+            <center>
+            <td width="500px" style="padding: 40px 60px;text-align: center;">
+                <center>   <img src="images/MyHostelPic4.png" width="300px" style="border-radius: 23px;padding: 15px;"> <br> </center>
+                Thank you for considering our hostel for your stay in San Fransisco. We look forward to welcoming you soon! If you have any further questions or need assistance, please don't hesitate to contact us. 
+            </td>
+            <td width="300px" style="padding:50px;">
+               <center><br>
+                
+                <a href="http://www.instagram.com"><img src="images/instagram.png" class="sm"></a>
+                <a href="http://www.twitter.com"><img src="images/twitter.png" class="sm"></a>
+                <a href="http://www.whatsapp.com"><img src="images/whatsapp.png" class="sm"></a> <br>
+                Follow us on our social media channels to stay updated!<br> <br>
+            </center>
+            </td>
+            <td style="padding: 50px;">
+                <center>
+                <img src="images/contactus2.webp" width="100px" style="padding: 15px;"> <br> 
+                PHONE: <br>
+                Customer Support: [+123-456-7891] <br></center>
+            </td>
+        </center>
+        </table>
+        
+    </div>
+</body>
+</html>
